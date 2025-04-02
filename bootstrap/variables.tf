@@ -34,8 +34,8 @@ variable "budget_channels" {
   description = "Budget notification channels"
   default = {
     marek-wiewiorka : "marek.wiewiorka@gmail.com"
-    krzysztof-kluczynski: "krzysztof.kluczynski22@gmail.com"
-    aleksander-bujnowski: "bujnowski.aleksander@gmail.com"
-    bartlomiej-krajewski: "bartekworms3@gmail.com"
+    krzysztof-kluczynski : "krzysztof.kluczynski22@gmail.com"
+    aleksander-bujnowski : "bujnowski.aleksander@gmail.com"
+    bartlomiej-krajewski : "bartekworms3@gmail.com"
   }
 }

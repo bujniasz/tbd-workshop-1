@@ -5,7 +5,9 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
 1. Authors:
 
    Group number: 12
+
    Repository: https://github.com/bujniasz/tbd-workshop-1
+   
    Authors:
    - Aleksander Bujnowski
    - Bartłomiej Krajewski
