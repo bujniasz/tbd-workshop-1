@@ -34,12 +34,18 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
 
 6. Analyze terraform code. Play with terraform plan, terraform graph to investigate different modules.
 
-    ***describe one selected module and put the output of terraform graph for this module here***
-   
+    ![img.png](doc/figures/metastore-graph.png)    
+
+
 7. Reach YARN UI
    
-   ***place the command you used for setting up the tunnel, the port and the screenshot of YARN UI here***
-   
+    ```bash
+    gcloud compute ssh tbd-cluster-m --project=tbd-2025l-313595 --zone=europe-west1-d --tunnel-through-iap -- -L 8088:localhost:8088
+    ```   
+
+    ![img.png](doc/figures/yarnui.png)    
+
+
 8. Draw an architecture diagram (e.g. in draw.io) that includes:
     1. VPC topology with service assignment to subnets
     2. Description of the components of service accounts
