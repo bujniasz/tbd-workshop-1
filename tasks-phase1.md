@@ -41,15 +41,15 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
     Key Components:
     - _provider_ - uses the GCP provider (defined in `versions.tf`)
     - _resources_ (described in `main.tf`)
-        a) google_dataproc_metastore_service - configures a Dataproc Metastore service with the specified version, network, region, and project name
-        b) google_project_service.api-metastore - ensures that the necessary Metastore API is enabled in the project
+        - google_dataproc_metastore_service - configures a Dataproc Metastore service with the specified version, network, region, and project name
+        - google_project_service.api-metastore - ensures that the necessary Metastore API is enabled in the project
     - _input variables_ (described in `variables.tf`)
-        a) var.metastore_version - specifies the version of the Metastore to be deployed.
-        b) var.network - network configuration for the Metastore instance.
-        c) var.region - region where the Metastore will be deployed.
-        d) var.project_name - the name of the GCP project.
+        - var.metastore_version - specifies the version of the Metastore to be deployed.
+        - var.network - network configuration for the Metastore instance.
+        - var.region - region where the Metastore will be deployed.
+        - var.project_name - the name of the GCP project.
     - _output_ (described in `outputs.tf`)
-        a) output.metastore_name - outputs the name of the created Metastore instance
+        - output.metastore_name - outputs the name of the created Metastore instance
 
     ![img.png](doc/figures/metastore-graph.png) 
 
