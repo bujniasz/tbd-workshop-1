@@ -66,8 +66,8 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
         - guarantees that all required dependencies are activated before creating the primary resource
         - holds configuration data necessary for proper Metastore initialization
     - Level 5: Provider and Project Name
-            - provider - direct link to the provider in the context of used variables
-            - project name - identifies the project name where the infrastructure will be created
+        - provider - direct link to the provider in the context of used variables
+        - project name - identifies the project name where the infrastructure will be created
 
 7. Reach YARN UI
    
