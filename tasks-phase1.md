@@ -33,24 +33,23 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
 
 
 6. Analyze terraform code. Play with terraform plan, terraform graph to investigate different modules.
-<br/>
 
     The **metascore** module.   
 
-    The metastore module in Terraform is responsible for setting up a Google Cloud Dataproc Metastore service. This service provides a fully managed, scalable metastore for Apache Hive (HMS). It allows metadata management and provides interoperability between the various data processing engines and tools when working with big data on GCP.<br/><br/>  
+    The metastore module in Terraform is responsible for setting up a Google Cloud Dataproc Metastore service. This service provides a fully managed, scalable metastore for Apache Hive (HMS). It allows metadata management and provides interoperability between the various data processing engines and tools when working with big data on GCP.    
 
     Key Components:
     - _provider_ - uses the GCP provider (defined in `versions.tf`)
     - _resources_ (described in `main.tf`)
-    a) google_dataproc_metastore_service - configures a Dataproc Metastore service with the specified version, network, region, and project name
-    b) google_project_service.api-metastore - ensures that the necessary Metastore API is enabled in the project
+        a) google_dataproc_metastore_service - configures a Dataproc Metastore service with the specified version, network, region, and project name
+        b) google_project_service.api-metastore - ensures that the necessary Metastore API is enabled in the project
     - _input variables_ (described in `variables.tf`)
-    a) var.metastore_version - specifies the version of the Metastore to be deployed.
-    b) var.network - network configuration for the Metastore instance.
-    c) var.region - region where the Metastore will be deployed.
-    d) var.project_name - the name of the GCP project.
+        a) var.metastore_version - specifies the version of the Metastore to be deployed.
+        b) var.network - network configuration for the Metastore instance.
+        c) var.region - region where the Metastore will be deployed.
+        d) var.project_name - the name of the GCP project.
     - _output_ (described in `outputs.tf`)
-    a) output.metastore_name - outputs the name of the created Metastore instance<br/><br/><br/>
+        a) output.metastore_name - outputs the name of the created Metastore instance
 
     ![img.png](doc/figures/metastore-graph.png) 
 
@@ -67,10 +66,8 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
         - guarantees that all required dependencies are activated before creating the primary resource
         - holds configuration data necessary for proper Metastore initialization
     - Level 5: Provider and Project Name
-         - provider - direct link to the provider in the context of used variables
-         - project name - identifies the project name where the infrastructure will be created <br/><br/>
-
-
+            - provider - direct link to the provider in the context of used variables
+            - project name - identifies the project name where the infrastructure will be created
 
 7. Reach YARN UI
    
