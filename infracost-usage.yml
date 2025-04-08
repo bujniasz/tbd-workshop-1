@@ -6,7 +6,7 @@ resource_usage:
       europe_north1: 10            # GB of data delivered from the artifact registry to europe-north1.
       australia_southeast1: 10     # GB of data delivered from the artifact registry to australia-southeast1.               # to a Google Cloud region on another continent. 
   google_storage_bucket.tbd_bucket:
-    storage_gb: 25                    # Total size of bucke
+    storage_gb: 45                    # Total size of bucke
     monthly_class_a_operations: 100   # Monthly number of class A operations (object adds, bucket/object list).
     monthly_class_b_operations: 100   # Monthly number of class B operations (object gets, retrieve bucket/object metadata).
     monthly_data_retrieval_gb: 60     # Monthly amount of data retrieved in GB.
