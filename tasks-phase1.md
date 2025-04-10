@@ -131,9 +131,25 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
 
 10. Create a BigQuery dataset and an external table using SQL
     
-    ***place the code and output here***
-   
-    ***why does ORC not require a table schema?***
+    ```
+    CREATE SCHEMA IF NOT EXISTS stage10_shakespeare_dataset OPTIONS(location='europe-west1');
+
+    CREATE OR REPLACE EXTERNAL TABLE stage10_shakespeare_dataset.ext_table
+    OPTIONS  (
+        format = 'ORC',
+        uris = ['gs://tbd-2025l-313595-data/data/shakespeare/*.orc']
+    );
+    ```
+
+    Output from:
+    ```
+    SELECT word FROM `tbd-2025l-313595.stage10_shakespeare_dataset.ext_table` LIMIT 100
+    ```
+
+    ![img.png](doc/figures/10-output.png)
+
+    Apache ORC (Optimized Row Columnar) is a free and open-source column-oriented data storage format. The schema is embedded in the file itself, and table schema is created when the file is read.
+
 
 11. Find and correct the error in spark-job.py
 
