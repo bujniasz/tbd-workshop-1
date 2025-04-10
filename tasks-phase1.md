@@ -137,10 +137,32 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
 
 11. Find and correct the error in spark-job.py
 
-    ***describe the cause and how to find the error***
+    _spark-job.py_ was failing with following error:
+    
+    ![img.png](doc/figures/11-fail.png)
+
+    which was caused by following line:
+
+    ```
+    DATA_BUCKET = "gs://tbd-2025l-9900-data/data/shakespeare/"
+    ```
+
+    Fix required changing bucket name into its actual name (with correct student id):
+
+    ```
+    DATA_BUCKET = "gs://tbd-2025l-313595-data/data/shakespeare/"
+    ```
 
 12. Add support for preemptible/spot instances in a Dataproc cluster
 
-    ***place the link to the modified file and inserted terraform code***
-    
+    Before support was added:
+
+    ![img.png](doc/figures/12-before.png)
+
+    After adding this part of code:
+
+    [modules/dataproc/main.tf#L53-L55](https://github.com/bujniasz/tbd-workshop-1/blob/master/modules/dataproc/main.tf#L53-L55)
+
+    Support was visible from GUI:
+        
     
