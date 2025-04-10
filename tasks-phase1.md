@@ -153,6 +153,11 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
     DATA_BUCKET = "gs://tbd-2025l-313595-data/data/shakespeare/"
     ```
 
+    After this change, job started to finish with success:
+
+    ![img.png](doc/figures/11-after.png)
+
+
 12. Add support for preemptible/spot instances in a Dataproc cluster
 
     Before support was added:
@@ -164,5 +169,6 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
     [modules/dataproc/main.tf#L53-L55](https://github.com/bujniasz/tbd-workshop-1/blob/master/modules/dataproc/main.tf#L53-L55)
 
     Support was visible from GUI:
-        
+    ![img.png](doc/figures/12-after.png)
+
     
