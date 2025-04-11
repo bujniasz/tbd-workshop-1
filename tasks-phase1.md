@@ -185,6 +185,7 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
     [modules/dataproc/main.tf#L53-L55](https://github.com/bujniasz/tbd-workshop-1/blob/master/modules/dataproc/main.tf#L53-L55)
 
     Support was visible from GUI:
+    
     ![img.png](doc/figures/12-after.png)
 
     
